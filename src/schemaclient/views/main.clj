@@ -22,8 +22,7 @@
         [:table {:class "data-table"}
             (table-header colnames)
             (map (fn [row] (table-row colnames row))
-            table-data)
-            ])))
+                 table-data)])))
 
 (defpage "/" []
          (common/layout
