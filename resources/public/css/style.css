@@ -1,0 +1,17 @@
+.data-table {
+    border-collapse: collapse;
+    box-shadow: 0.1em 0.1em 0.5em -0.2em;
+    margin: 0.2em;
+}
+
+.data-table th,
+.data-table td {
+    border:1px solid black;
+    padding: 0.5em;
+}
+
+.data-table th {
+    background: #333;
+    color: #eee;
+    text-align:center;
+}
