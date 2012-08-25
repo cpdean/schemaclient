@@ -20,5 +20,4 @@
 (defn my-player
     "returns map of current player data"
     []
-    (first
-        (query "SELECT * FROM my_player")))
+    (query "SELECT * FROM my_player"))
