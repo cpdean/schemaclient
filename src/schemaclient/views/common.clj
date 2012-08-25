@@ -6,10 +6,15 @@
     [url text]
     [:li [:a {:href url} text]])
 
+(def nav-links
+{
+     "/planets" "Planets"
+     "/player" "Player Details"
+})
+
 (defpartial navigation []
     [:ul {:id "navigation"}
-        (nav-link "/planets" "Planets")
-        (nav-link "/player" "Player Details")])
+        (for [[k v] nav-links] (nav-link k v))])
         
 (defpartial layout [& content]
             (html5
