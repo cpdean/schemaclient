@@ -34,7 +34,7 @@
     (common/layout
         (let [planets (db/planets)]
         (list
-        [:h1 (format "Here are the first %s planets"(count planets))]
+        [:h1 (format "Here are the first %s planets" (count planets))]
         (expand-to-table planets)))))
 
 (defpage "/player" []
@@ -44,7 +44,13 @@
         (list [:p "Player name: " ((first p) :username)]
               (expand-to-table p)))))
 
+(defpage "/ships" []
+    (common/layout
+    [:h1 "ships"]
+    (expand-to-table (db/my-ships))))
+
 (defpage "/actions" []
     (common/layout
     [:h1 "Some actions"]
     (expand-to-table (db/actions))))
+

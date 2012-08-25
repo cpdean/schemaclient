@@ -26,3 +26,8 @@
     "returns map of action stuff"
     []
     (query "SELECT * FROM action"))
+
+(defn my-ships
+    "returns entire my_ships table"
+    []
+    (query "SELECT * FROM my_ships"))

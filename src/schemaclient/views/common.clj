@@ -11,6 +11,7 @@
      "/planets" "Planets"
      "/player" "Player Details"
      "/actions" "Actions..."
+     "/ships" "Ships"
 })
 
 (defpartial navigation []
