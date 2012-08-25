@@ -21,3 +21,8 @@
     "returns map of current player data"
     []
     (query "SELECT * FROM my_player"))
+
+(defn actions
+    "returns map of action stuff"
+    []
+    (query "SELECT * FROM action"))

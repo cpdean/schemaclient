@@ -44,3 +44,7 @@
         (list [:p "Player name: " ((first p) :username)]
               (expand-to-table p)))))
 
+(defpage "/actions" []
+    (common/layout
+    [:h1 "Some actions"]
+    (expand-to-table (db/actions))))

@@ -10,6 +10,7 @@
 {
      "/planets" "Planets"
      "/player" "Player Details"
+     "/actions" "Actions..."
 })
 
 (defpartial navigation []
